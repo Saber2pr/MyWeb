@@ -36,7 +36,7 @@
                 <li><a href="https://blog.csdn.net/u011607490">CSDN</a></li>
                 <li><a href="https://space.bilibili.com/71959910/#/">BILIBILI</a></li>
                 <li><a href="../Pages/AboutMe.html">AboutMe</a></li>
-                <li class="active"><a href="../Pages/Blog_Alter.html">MyBlog</a></li>
+                <li class="active"><a href="../Pages/Blog_View.html">MyBlog</a></li>
                 <li><a href="../Log/Logs.html">Logs</a></li>
             </ul>
         </div>
@@ -101,7 +101,7 @@
 
             <h3>Input the article:</h3>
 
-            <textarea cols="20" rows="1" id="MyTitle" onfocus="if(value=='Input the title here...'){value=''}"
+            <textarea cols="65" rows="1" id="MyTitle" onfocus="if(value=='Input the title here...'){value=''}"
                       onblur="if (value ==''){value='Input the title here...'}">Input the title here...</textarea>
 
             <textarea style="background-color: #F0F0F0;" cols="65" rows="16" id="MyLabel" onfocus="if(value=='Input you words here...'){value=''}"
@@ -124,27 +124,25 @@
         <!---------------------------------------------------------------------------------------------------->
         <!--右-->
 
-        <div class="row-md-4 column">
-
-            <div class="col-md-4 row">
+        <div class="col-md-4 column">
+            <div class="row-md-4 column">
 
                 <h2>History Title</h2>
 
-                <textarea cols="40" rows="8" id="ViewLabel" style="background-color: #CECEFF;"></textarea>
+                <textarea cols="65" rows="8" id="ViewLabel" style="background-color: #CECEFF;"></textarea>
 
                 <script>
 
                     showAllTables(ViewLabel);
 
                 </script>
-
             </div>
 
-            <div class="row-md-4 row">
+            <div class="row-md-4 column">
 
                 <h2>Console</h2>
 
-                <textarea cols="40" rows="12" id="OutLabel" style="background-color: #CECEFF;"></textarea>
+                <textarea cols="65" rows="12" id="OutLabel" style="background-color: #CECEFF;"></textarea>
 
             </div>
 
@@ -159,10 +157,11 @@
         <div class="col-md-2 column">
 
 
-
         </div>
 
         <div class="col-md-6 column">
+
+
 
             <ul class="nav nav-pills nav-stacked">
 
