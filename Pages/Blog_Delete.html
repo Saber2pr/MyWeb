@@ -9,7 +9,11 @@
     <script src="../js/sql.js"></script>
     <script src="../js/sqliteTools.js"></script>
     <script src="../js/input.js"></script>
-
+    <script language="javascript">
+        function AcceptData(num){
+            document.getElementById("MyTitle").value = num;
+        }
+    </script>
     <style>
 
     </style>
@@ -63,21 +67,23 @@
 
                 <!--添加左侧导航分类-->
 
-                <li class="active"><a href="#">Daily</a></li>
+                <li class="active"><a></a></li>
 
-                <li><a href="#">GitHub</a></li>
+                <li onclick="AcceptData('Daily')" value="Daily" ><a href="#">Daily</a></li>
 
-                <li><a href="#">C/C++</a></li>
+                <li onclick="AcceptData('GitHub')" value="GitHub" ><a href="#">GitHub</a></li>
 
-                <li><a href="#">JavaScript</a></li>
+                <li onclick="AcceptData('Cpp')" value="Cpp" ><a href="#">C++</a></li>
 
-                <li><a href="#">cocos2d-x</a></li>
+                <li onclick="AcceptData('JavaScript')" value="JavaScript" ><a href="#">JavaScript</a></li>
 
-                <li><a href="#">bootstrap</a></li>
+                <li onclick="AcceptData('cocos2d-x')" value="cocos2d-x" ><a href="#">cocos2d-x</a></li>
 
-                <li><a href="#">Qt</a></li>
+                <li onclick="AcceptData('bootstrap')" value="bootstrap" ><a href="#">bootstrap</a></li>
 
-                <li><a href="#">OpenCV</a></li>
+                <li onclick="AcceptData('Qt')" value="Qt" ><a href="#">Qt</a></li>
+
+                <li onclick="AcceptData('OpenCV')" value="OpenCV" ><a href="#">OpenCV</a></li>
 
             </ul>
 
@@ -91,10 +97,10 @@
 
 
             <ul class="nav nav-pills nav-stacked">
-                <li><a href="../Pages/Blog_View.html">View my articles</a></li>
-                <li><a href="../Pages/Blog_Alter.html">Alter my articles</a></li>
-                <li><a href="../Pages/Blog_New.html">New articles</a></li>
-                <li class="active"><a href="../Pages/Blog_Delete.html">Delete articles</a></li>
+                <li><a href="../Pages/Blog_View.html">查看</a></li>
+                <li><a href="../Pages/Blog_Alter.html">编辑</a></li>
+                <li><a href="../Pages/Blog_New.html">新建</a></li>
+                <li class="active"><a href="../Pages/Blog_Delete.html">删除</a></li>
 
 
             </ul>
