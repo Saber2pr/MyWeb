@@ -17,7 +17,7 @@
 
             console.log(title.value);
 
-            if (label.value === 'Input you words here...') {
+            if (label.value === 'Input your words here...') {
 
                 alert("AK-12: (╯°口°)╯(┴—┴ 你还没输入文字呢！");
 
