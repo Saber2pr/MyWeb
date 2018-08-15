@@ -81,21 +81,21 @@ background-attachment: fixed;"
                 <!--添加左侧导航分类-->
                 <li class="active"><a></a></li>
 
-                <li onclick="AcceptData('Daily')" value="Daily" ><a href="#MyTitle">Daily</a></li>
+                <li onclick="AcceptData('Daily')" value="Daily" ><a href="#input">Daily</a></li>
 
-                <li onclick="AcceptData('GitHub')" value="GitHub" ><a href="#MyTitle">GitHub</a></li>
+                <li onclick="AcceptData('GitHub')" value="GitHub" ><a href="#input">GitHub</a></li>
 
-                <li onclick="AcceptData('Cpp')" value="Cpp" ><a href="#MyTitle">C++</a></li>
+                <li onclick="AcceptData('Cpp')" value="Cpp" ><a href="#input">C++</a></li>
 
-                <li onclick="AcceptData('JavaScript')" value="JavaScript" ><a href="#MyTitle">JavaScript</a></li>
+                <li onclick="AcceptData('JavaScript')" value="JavaScript" ><a href="#input">JavaScript</a></li>
 
-                <li onclick="AcceptData('cocos2dx')" value="cocos2dx" ><a href="#MyTitle">cocos2d-x</a></li>
+                <li onclick="AcceptData('cocos2dx')" value="cocos2dx" ><a href="#input">cocos2d-x</a></li>
 
-                <li onclick="AcceptData('bootstrap')" value="bootstrap" ><a href="#MyTitle">bootstrap</a></li>
+                <li onclick="AcceptData('bootstrap')" value="bootstrap" ><a href="#input">bootstrap</a></li>
 
-                <li onclick="AcceptData('Qt')" value="Qt" ><a href="#MyTitle">Qt</a></li>
+                <li onclick="AcceptData('Qt')" value="Qt" ><a href="#input">Qt</a></li>
 
-                <li onclick="AcceptData('OpenCV')" value="OpenCV" ><a href="#MyTitle">OpenCV</a></li>
+                <li onclick="AcceptData('OpenCV')" value="OpenCV" ><a href="#input">OpenCV</a></li>
 
             </ul>
 
@@ -107,7 +107,7 @@ background-attachment: fixed;"
         <div class="col-md-6 column">
             <!--添加对应分类文章-->
 
-            <h3>Input the article:</h3>
+            <h3 id="input">Input the article:</h3>
 
             <textarea class="form-control" name="deblock_udid" rows="1" style="min-width: 90%" id="MyTitle" onfocus="if(value=='Input the title here...'){value=''}"
                       onblur="if (value ==''){value='Input the title here...'}">Input the title here...</textarea>
@@ -124,7 +124,7 @@ background-attachment: fixed;"
 
                 <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')" ><a href="#list">新建</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')" ><a href="#list">查看</a></li>
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')" ><a href="#input">查看</a></li>
 
                 <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'alter')" ><a href="#list">编辑</a></li>
 
