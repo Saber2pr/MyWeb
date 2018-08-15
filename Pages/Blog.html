@@ -9,14 +9,18 @@
     <script src="../js/sql.js"></script>
     <script src="../js/sqliteTools.js"></script>
     <script src="../js/input.js"></script>
+
     <script language="javascript">
         function AcceptData(num){
             document.getElementById("MyTitle").value = num;
         }
     </script>
+
     <style>
 
     </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
@@ -27,6 +31,8 @@
 background-size:100% 100%;
 background-attachment: fixed;"
 >
+
+
 
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -44,13 +50,15 @@ background-attachment: fixed;"
                 <li><a href="https://blog.csdn.net/u011607490">CSDN</a></li>
                 <li><a href="https://space.bilibili.com/71959910/#/">BILIBILI</a></li>
                 <li><a href="../Pages/AboutMe.html">AboutMe</a></li>
-                <li class="active"><a href="../Pages/Blog_View.html">MyBlog</a></li>
+                <li class="active"><a href="Blogq.html">MyBlog</a></li>
                 <li><a href="../Log/Logs.html">Logs</a></li>
 
             </ul>
         </div>
     </div>
 </nav>
+
+
 
 <div class="container">
 
@@ -71,7 +79,6 @@ background-attachment: fixed;"
             <ul class="nav nav-pills nav-stacked" style="background-color: #FFBFFF;">
 
                 <!--添加左侧导航分类-->
-
                 <li class="active"><a></a></li>
 
                 <li onclick="AcceptData('Daily')" value="Daily" ><a href="#">Daily</a></li>
@@ -100,25 +107,31 @@ background-attachment: fixed;"
         <div class="col-md-6 column">
             <!--添加对应分类文章-->
 
-
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="../Pages/Blog_New.html">新建</a></li>
-                <li><a href="../Pages/Blog_View.html">查看</a></li>
-                <li><a href="../Pages/Blog_Alter.html">编辑</a></li>
-                <li><a href="../Pages/Blog_Delete.html">删除</a></li>
-
-
-            </ul>
-
             <h3>Input the article:</h3>
 
             <textarea cols="65" rows="1" id="MyTitle" onfocus="if(value=='Input the title here...'){value=''}"
                       onblur="if (value ==''){value='Input the title here...'}">Input the title here...</textarea>
 
+
+
             <textarea style="background-color: #F0F0F0;" cols="65" rows="16" id="MyLabel" onfocus="if(value=='Input you words here...'){value=''}"
                       onblur="if (value ==''){value='Input you words here...'}">Input you words here...</textarea>
 
-            <p><br></p>
+
+
+            <ul class="nav nav-pills nav-stacked" style="background-color: #FFBFFF;">
+                <li class="active"><a></a></li>
+
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')" ><a href="#">新建</a></li>
+
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')" ><a href="#">查看</a></li>
+
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'alter')" ><a href="#">编辑</a></li>
+
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'delete')" ><a href="#">删除</a></li>
+
+
+            </ul>
 
 
 
@@ -138,7 +151,7 @@ background-attachment: fixed;"
         <div class="col-md-4 column">
             <div class="row-md-4 column">
 
-                <h2>History Title</h2>
+                <h2>Title list</h2>
 
                 <textarea cols="65" rows="8" id="ViewLabel" style="background-color: #CECEFF;"></textarea>
 
@@ -168,16 +181,13 @@ background-attachment: fixed;"
         <div class="col-md-2 column">
 
 
-
         </div>
 
         <div class="col-md-6 column">
 
-            <ul class="nav nav-pills nav-stacked">
 
-                <li class="active" onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')" ><a href="#">Click to submit</a></li>
 
-            </ul>
+
 
         </div>
 
