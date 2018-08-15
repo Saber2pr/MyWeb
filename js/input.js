@@ -11,7 +11,7 @@
 
         if (title.value === 'Input the title here...') {
 
-            alert("AK-12:你还没输入标题呢！");
+            alert("AK-12: （/TДT)/ 等等！你还没输入标题呢！");
 
         }else {
 
@@ -19,7 +19,7 @@
 
             if (label.value === 'Input you words here...') {
 
-                alert("AK-12:你还没输入文字呢！");
+                alert("AK-12: (╯°口°)╯(┴—┴ 你还没输入文字呢！");
 
             }else {
                 console.log(label.value);

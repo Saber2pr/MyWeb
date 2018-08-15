@@ -122,13 +122,13 @@ background-attachment: fixed;"
             <ul class="nav nav-pills nav-stacked" style="background-color: #FFBFFF;">
                 <li class="active"><a></a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')" ><a href="#">新建</a></li>
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')" ><a href="#list">新建</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')" ><a href="#">查看</a></li>
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')" ><a href="#list">查看</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'alter')" ><a href="#">编辑</a></li>
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'alter')" ><a href="#list">编辑</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'delete')" ><a href="#">删除</a></li>
+                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'delete')" ><a href="#list">删除</a></li>
 
 
             </ul>
@@ -151,7 +151,7 @@ background-attachment: fixed;"
         <div class="col-md-4 column">
             <div class="row-md-4 column">
 
-                <h2>Title list</h2>
+                <h2 id="list">Title list</h2>
 
                 <textarea class="form-control" name="deblock_udid" rows="8" style="background-color: #CECEFF; min-width: 90%" id="ViewLabel"></textarea>
 
