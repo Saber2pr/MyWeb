@@ -4,5 +4,5 @@
 >	 `saber2pr@gmail.com`
 >	 `1029985799@qq.com`
 
-> * The date of last alter:
+> * The date :
 >	> 2018/8/11_18:11:59
