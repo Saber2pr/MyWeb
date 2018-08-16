@@ -1,5 +1,7 @@
 require.config({
 
+    baseUrl: '../js',
+
     paths: {
 
         jquery: 'https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js',
@@ -8,9 +10,11 @@ require.config({
 
         sql: 'plugin/sql',
 
-        sqlTool: 'plugin/sqlTool',
+        sqlTool: 'database/sqlTool',
 
-        database : 'database'
+        database : 'database/database',
+
+        progressBar : 'showTools/progressBar'
 
     },
 
@@ -28,13 +32,19 @@ require.config({
 
                 return {
 
-                    'submit': submit,
+                    submit: 'submit',
 
-                    'showAllTables': showAllTables
+                    showAllTables: 'showAllTables'
 
                 }
 
             }
+
+        },
+
+        progressBar: {
+
+            export : 'proStart'
 
         }
 
