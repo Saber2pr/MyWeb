@@ -4,16 +4,14 @@
     <meta charset="utf-8">
     <title>Blog For AK-12</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="../js/sql.js"></script>
-    <script src="../js/sqliteTools.js"></script>
-    <script src="../js/input.js"></script>
 
-    <script language="javascript">
+    <script src="../js/plugin/require.js" async="async" data-main="../js/main"></script>
+
+    <script>
         function AcceptData(num){
             document.getElementById("MyTitle").value = num;
         }
+
     </script>
 
     <style>
@@ -50,7 +48,7 @@ background-attachment: fixed;"
                 <li><a href="https://blog.csdn.net/u011607490">CSDN</a></li>
                 <li><a href="https://space.bilibili.com/71959910/#/">BILIBILI</a></li>
                 <li><a href="../Pages/AboutMe.html">AboutMe</a></li>
-                <li class="active"><a href="Blogq.html">MyBlog</a></li>
+                <li class="active"><a href="Blog.html">MyBlog</a></li>
                 <li><a href="../Log/Logs.html">Logs</a></li>
 
             </ul>
@@ -122,13 +120,13 @@ background-attachment: fixed;"
             <ul class="nav nav-pills nav-stacked" style="background-color: #FFBFFF;">
                 <li class="active"><a></a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')" ><a href="#list">新建</a></li>
+                <li onclick="require(['database'], function (data) {data.submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'new')})" ><a href="#list">新建</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')" ><a href="#input">查看</a></li>
+                <li onclick="require(['database'], function (data) {data.submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'view')})" ><a href="#list">查看</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'alter')" ><a href="#list">编辑</a></li>
+                <li onclick="require(['database'], function (data) {data.submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'alter')})" ><a href="#list">编辑</a></li>
 
-                <li onclick="submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'delete')" ><a href="#list">删除</a></li>
+                <li onclick="require(['database'], function (data) {data.submit(MyTitle, MyLabel, OutLabel, ViewLabel, 'delete')})" ><a href="#list">删除</a></li>
 
 
             </ul>
@@ -155,11 +153,8 @@ background-attachment: fixed;"
 
                 <textarea class="form-control" name="deblock_udid" rows="8" style="background-color: #CECEFF; min-width: 90%" id="ViewLabel"></textarea>
 
-                <script>
+                <script>require(['database'], function (data) {data.showAllTables(ViewLabel)})</script>
 
-                    showAllTables(ViewLabel);
-
-                </script>
             </div>
 
             <div class="row-md-4 column">
@@ -180,20 +175,13 @@ background-attachment: fixed;"
     <div class="row clearfix">
         <div class="col-md-2 column">
 
-
         </div>
 
         <div class="col-md-6 column">
 
-
-
-
-
         </div>
 
         <div class="col-md-4 column">
-
-
 
         </div>
 
@@ -222,5 +210,8 @@ background-attachment: fixed;"
     <div style="color:GrayText">1029985799@qq.com</div>
     <br>
 </div>
+
+
+
 </body>
 </html>
