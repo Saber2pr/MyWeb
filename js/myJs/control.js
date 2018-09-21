@@ -14,7 +14,7 @@
         progressBar.play('bar', 'progress', 5)
     </script>
  */
-window.control = function(){
+define(function(){
     return {
         onclickPlay(json){
             for(var media of json){
@@ -59,5 +59,5 @@ window.control = function(){
             }
         }
     }
-}()
+})
 
