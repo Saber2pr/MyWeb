@@ -1,0 +1,8 @@
+cd + space + 目录地址 : 进入该地址下环境；
+ipconfig/all : 查看IP
+regedit : 注册表管理器 
+java -version : jdk版本
+java -verbose : jdk路径
+set|findstr/I : 查找关键字
+gcc --version : 查看gcc版本
+keytool -genkey -alias android.keystore -keyalg RSA -validity 20000 -keystore android.keystore : 数字签名

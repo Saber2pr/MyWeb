@@ -1,0 +1,10 @@
+基于Cocos2d-x C++ 查看效果 
+
+Tiled导出地图文件desert.tmx 
+同时将地图文件和图片放到Resources目录下
+
+AppDelegate.cpp中用runWithScene方法读取场景 
+
+读取和实现地图使用下面2行代码(init方法)
+TMXTiledMap* map = TMXTiledMap::create("desert.tmx"); 
+this->addChild(map); 

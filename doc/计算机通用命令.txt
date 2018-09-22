@@ -1,0 +1,8 @@
+计算机通用命令
+
+Ctrl + z : 撤销;
+Ctrl + c : 复制;
+Ctrl + v : 粘贴;
+PrtSc : 全屏截图;
+Ctrl + Shift + Esc : 任务管理器;
+Ctrl + A : 全选;

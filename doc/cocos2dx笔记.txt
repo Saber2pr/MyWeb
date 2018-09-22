@@ -1,0 +1,148 @@
+*****************************************************************************************************************************************************
+3.x新建项目
+
+1.官网下载项目引擎压缩包
+
+2.安装python，并配置好环境变量，到引擎setup.py目录下打开终端执行命令：python setup.py
+
+
+
+3.如果没有配置cocos命令环境变量，到cocos2d-x-3.13\tools\cocos2d-console/bin目录下打开终端执行创建项目命令：cocos new 项目名 -p 包名 -l 语言类型 -d 存放路径
+
+cocos new Demo -p com.cocos2dx3.org -l cpp -d F:\WorkPlace\cocos2dx3.1.7
+
+4.创建项目成功，编译运行
+
+2.x新建项目
+
+create_project.py -project %projectName% -package %packageName% -language cpp -path F:\WorkPlace\cocos2dx2.2.6\
+
+
+*****************************************************************************************************************************************************
+MyScene.h
+
+class MyScene : public cocos2d::Scene//继承父类方法
+{
+public:
+	MyScene();
+	~MyScene();
+	static cocos2d::Scene* createScene();//      利用父类定义一个方法，类型为Scene*
+	virtual bool init();//                        <-设置坐标方法，图片放置等
+	
+	CREATE_FUNC(MyScene);//               <-重点，没这句话就输出黑屏
+
+};
+
+*****************************************************************************************************************************************************
+MyScene.cpp
+
+Scene * MyScene::createScene()
+{
+	auto scene = Scene::create();
+	auto layer = MyScene::create();
+	scene->addChild(layer);//构造一个场景scene，构造一个图层layer，把图层layer添加到场景scene里
+	return scene;//把搭建好的场景返回
+}
+
+bool MyScene::init()
+{
+	Scene::init();//父类初始化
+	auto map = Sprite::create("map.ico");//读取图片
+	map->setAnchorPoint(Vec2(0, 0));//设置图片锚点
+	map->setPosition(Vec2(0,0 ));//设置图片坐标
+	this->addChild(map);//添加到scene场景中
+	return true;
+}
+
+*****************************************************************************************************************************************************
+HelloWorldScene.cpp
+
+Scene *HelloWorld::createScene()
+
+{
+	CC_USE_PHYSICS;
+	auto scene = Scene::createWithPhysics();
+
+	scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
+
+	//scene->getPhysicsWorld()->setGravity(Vec2(-1000, 0));
+
+
+	auto layer = HelloWorld::create();//千万不能写成 auto layer = HelloWorld::createScene()，否则无限递归，堆栈溢出。
+	
+	scene->addChild(layer);
+	return scene;
+
+}
+
+*****************************************************************************************************************************************************
+插入序列帧动画（3处自定义）
+
+	Vector<cocos2d::SpriteFrame*> pAniFrameVec;
+	Sprite *pSprite = NULL;
+	char szFile[20] = "";
+	Size size = Director::sharedDirector()->getWinSize();
+
+	for (int i = 1; i <= 12; i++)//  @1.这里定义图片数量
+	{
+		sprintf_s(szFile, "run%02d.png", i);//run%02d.png  @2.这里引用第二张图(图片名字run01.png)
+		auto pFrame = SpriteFrame::create(szFile, CCRectMake(0, 0, 128, 128));
+		if (i == 1)    // 添加第一张图到精灵就可以了
+		{
+			pSprite = Sprite::createWithSpriteFrame(pFrame);
+			pSprite->setPosition(ccp(pSprite->getContentSize().width, size.height / 2));
+			this->addChild(pSprite, 1);
+		}
+		pAniFrameVec.pushBack(pFrame);
+	}
+
+	Animation *pAnimation = Animation::createWithSpriteFrames(pAniFrameVec, 0.05f);    // 0.05f是指经过50毫秒就要切换下一张png图  @3.这里设置快慢
+	Animate* pAnimate = Animate::create(pAnimation);
+	ActionInterval* seq = (ActionInterval *)(Sequence::create(pAnimate, NULL));    // 创建顺序执行action
+	pSprite->runAction(RepeatForever::create(seq));
+
+*****************************************************************************************************************************************************
+
+
+
+/**
+*注意：类对象收集在自己外部的信息，传入内部做出反应。外部只需设置对象的监听或强制命令。
+*
+
+//////////////////////////////////////////////////////////////////////////
+
+消息处理机制：
+
+private：
+	0.消息存储器 _message ：负责存储消息。
+	1.消息协议 enum Message { up = 1001, left, right, down, stay, sleep, over }。
+	2.消息处理器 _dealWithMessage ：放置在自己的循环中，对收集到的消息进行识别处理。
+
+public：
+	3.消息收听者 heroListener() ：放置在主循环中持续收听并收集信息。
+	4.强制命令 actionCommander(int message) ：直接指定角色消息。
+
+//////////////////////////////////////////////////////////////////////////
+
+static静态取出[外部类容器]机制：
+
+private：
+	1.容器地址副本 Layer* _layer;
+	2.复制地址方法 void copyAdress(Layer* layer);//保存容器的地址。
+public:
+	3.创造函数static 类名* create(容器* );//new一个该类对象并autorelease，调用copyAdress，最后返回。
+
+//////////////////////////////////////////////////////////////////////////
+
+this指针取入该类对象的指针进行调用该类的方法。
+
+//////////////////////////////////////////////////////////////////////////
+*/
+
+
+
+*****************************************************************************************************************************************************
+
+
+
+

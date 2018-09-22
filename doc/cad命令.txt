@@ -1,0 +1,9 @@
+cad命令
+
+t + r + space + space ： 剪切；
+helix ： 螺旋线；
+reg ： 面域；
+rev ： 回转3d；
+ucs ： 移动坐标系；
+ctrl + c ： 撤销；
+shift + left ： 取消选中；

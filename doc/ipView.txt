@@ -1,0 +1,270 @@
+Microsoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+C:\Users\Administrator>netstat -obna
+
+活动连接
+
+  协议  本地地址          外部地址        状态           PID
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING       10128
+ [tomcat9.exe]
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       964
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+ 无法获取所有权信息
+  TCP    0.0.0.0:1433           0.0.0.0:0              LISTENING       2236
+ [sqlservr.exe]
+  TCP    0.0.0.0:3580           0.0.0.0:0              LISTENING       2672
+ [SystemWebServer.exe]
+  TCP    0.0.0.0:8009           0.0.0.0:0              LISTENING       10128
+ [tomcat9.exe]
+  TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       4160
+ [ApplicationWebServer.exe]
+  TCP    0.0.0.0:49152          0.0.0.0:0              LISTENING       640
+ [wininit.exe]
+  TCP    0.0.0.0:49153          0.0.0.0:0              LISTENING       408
+  eventlog
+ [svchost.exe]
+  TCP    0.0.0.0:49154          0.0.0.0:0              LISTENING       752
+ [lsass.exe]
+  TCP    0.0.0.0:49155          0.0.0.0:0              LISTENING       524
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:49199          0.0.0.0:0              LISTENING       744
+ [services.exe]
+  TCP    127.0.0.1:1434         0.0.0.0:0              LISTENING       2236
+ [sqlservr.exe]
+  TCP    127.0.0.1:4300         0.0.0.0:0              LISTENING       5528
+ [QQ.exe]
+  TCP    127.0.0.1:4301         0.0.0.0:0              LISTENING       5528
+ [QQ.exe]
+  TCP    127.0.0.1:7475         0.0.0.0:0              LISTENING       2216
+ [BaiduNetdisk.exe]
+  TCP    127.0.0.1:8005         0.0.0.0:0              LISTENING       10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60391        127.0.0.1:60392        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60392        127.0.0.1:60391        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60393        127.0.0.1:60394        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60394        127.0.0.1:60393        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60397        127.0.0.1:60398        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60398        127.0.0.1:60397        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60399        127.0.0.1:60400        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60400        127.0.0.1:60399        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60401        127.0.0.1:60402        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60402        127.0.0.1:60401        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60403        127.0.0.1:60404        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    127.0.0.1:60404        127.0.0.1:60403        ESTABLISHED     10128
+ [tomcat9.exe]
+  TCP    192.168.0.104:139      0.0.0.0:0              LISTENING       4
+ 无法获取所有权信息
+  TCP    192.168.0.104:51665    221.204.60.123:80      CLOSE_WAIT      1228
+ [SogouCloud.exe]
+  TCP    192.168.0.104:53522    124.164.13.187:80      CLOSE_WAIT      6684
+ [explorer.exe]
+  TCP    192.168.0.104:56212    14.116.143.105:443     CLOSE_WAIT      4732
+ [PPHelper.exe]
+  TCP    192.168.0.104:58302    163.177.71.178:80      CLOSE_WAIT      5528
+ [QQ.exe]
+  TCP    192.168.0.104:59816    123.125.114.235:80     CLOSE_WAIT      2216
+ [BaiduNetdisk.exe]
+  TCP    192.168.0.104:59904    61.135.185.18:5287     ESTABLISHED     2216
+ [BaiduNetdisk.exe]
+  TCP    192.168.0.104:59905    61.135.185.18:5287     ESTABLISHED     2216
+ [BaiduNetdisk.exe]
+  TCP    192.168.0.104:59910    202.108.23.113:80      ESTABLISHED     2216
+ [BaiduNetdisk.exe]
+  TCP    192.168.0.104:62475    42.236.37.149:80       ESTABLISHED     3816
+ [360Tray.exe]
+  TCP    192.168.0.104:62583    182.118.18.123:80      CLOSE_WAIT      6624
+ [ThunderMini.exe]
+  TCP    192.168.0.104:62704    14.116.143.105:443     CLOSE_WAIT      6572
+ [UCBrowser.exe]
+  TCP    192.168.0.104:62719    223.167.166.52:443     ESTABLISHED     3816
+ [360Tray.exe]
+  TCP    192.168.0.104:63091    123.125.114.235:443    ESTABLISHED     2216
+ [BaiduNetdisk.exe]
+  TCP    192.168.0.104:63219    182.118.16.182:80      CLOSE_WAIT      4764
+ [UCAgent.exe]
+  TCP    192.168.0.104:63221    61.135.186.155:80      CLOSE_WAIT      2216
+ [BaiduNetdisk.exe]
+  TCP    192.168.0.104:63441    183.3.225.58:443       CLOSE_WAIT      5528
+ [QQ.exe]
+  TCP    192.168.0.104:63736    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63738    112.80.255.122:80      TIME_WAIT       0
+  TCP    192.168.0.104:63739    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63742    60.221.18.35:443       TIME_WAIT       0
+  TCP    192.168.0.104:63743    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63747    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63748    60.221.222.238:80      TIME_WAIT       0
+  TCP    192.168.0.104:63751    140.205.164.47:443     TIME_WAIT       0
+  TCP    192.168.0.104:63752    123.125.52.65:80       TIME_WAIT       0
+  TCP    192.168.0.104:63753    123.183.221.19:80      TIME_WAIT       0
+  TCP    192.168.0.104:63757    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63760    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63761    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63765    221.204.49.48:443      TIME_WAIT       0
+  TCP    192.168.0.104:63766    61.135.162.188:8888    TIME_WAIT       0
+  TCP    192.168.0.104:63767    221.204.49.48:443      TIME_WAIT       0
+  TCP    192.168.0.104:63770    221.204.49.35:443      TIME_WAIT       0
+  TCP    192.168.0.104:63771    61.135.162.188:8888    TIME_WAIT       0
+  TCP    [::]:80                [::]:0                 LISTENING       10128
+ [tomcat9.exe]
+  TCP    [::]:135               [::]:0                 LISTENING       964
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               [::]:0                 LISTENING       4
+ 无法获取所有权信息
+  TCP    [::]:1433              [::]:0                 LISTENING       2236
+ [sqlservr.exe]
+  TCP    [::]:8009              [::]:0                 LISTENING       10128
+ [tomcat9.exe]
+  TCP    [::]:49152             [::]:0                 LISTENING       640
+ [wininit.exe]
+  TCP    [::]:49153             [::]:0                 LISTENING       408
+  eventlog
+ [svchost.exe]
+  TCP    [::]:49154             [::]:0                 LISTENING       752
+ [lsass.exe]
+  TCP    [::]:49155             [::]:0                 LISTENING       524
+  Schedule
+ [svchost.exe]
+  TCP    [::]:49199             [::]:0                 LISTENING       744
+ [services.exe]
+  TCP    [::1]:1434             [::]:0                 LISTENING       2236
+ [sqlservr.exe]
+  UDP    0.0.0.0:68             *:*                                    408
+  Dhcp
+ [svchost.exe]
+  UDP    0.0.0.0:500            *:*                                    524
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:2343           *:*                                    2300
+ [lkads.exe]
+  UDP    0.0.0.0:3600           *:*                                    3816
+ [360Tray.exe]
+  UDP    0.0.0.0:4002           *:*                                    5528
+ [QQ.exe]
+  UDP    0.0.0.0:4003           *:*                                    5528
+ [QQ.exe]
+  UDP    0.0.0.0:4500           *:*                                    524
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:5000           *:*                                    4004
+ [lkcitdl.exe]
+  UDP    0.0.0.0:5001           *:*                                    4092
+ [lktsrv.exe]
+  UDP    0.0.0.0:5355           *:*                                    1392
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:6000           *:*                                    4004
+ [lkcitdl.exe]
+  UDP    0.0.0.0:6001           *:*                                    4092
+ [lktsrv.exe]
+  UDP    0.0.0.0:7274           *:*                                    2216
+ [BaiduNetdisk.exe]
+  UDP    0.0.0.0:49384          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:49424          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:49426          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:49427          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:49428          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:50381          *:*                                    6572
+ [UCBrowser.exe]
+  UDP    0.0.0.0:50382          *:*                                    6572
+ [UCBrowser.exe]
+  UDP    0.0.0.0:50383          *:*                                    6572
+ [UCBrowser.exe]
+  UDP    0.0.0.0:50384          *:*                                    6572
+ [UCBrowser.exe]
+  UDP    0.0.0.0:50544          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:50545          *:*                                    6624
+ [ThunderMini.exe]
+  UDP    0.0.0.0:50546          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:50842          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:51717          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:54549          *:*                                    6624
+ [ThunderMini.exe]
+  UDP    0.0.0.0:55715          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:56550          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:58147          *:*                                    5528
+ [QQ.exe]
+  UDP    0.0.0.0:59833          *:*                                    3816
+ [360Tray.exe]
+  UDP    0.0.0.0:61209          *:*                                    2788
+ [QQProtect.exe]
+  UDP    0.0.0.0:61274          *:*                                    5528
+ [QQ.exe]
+  UDP    0.0.0.0:61275          *:*                                    5528
+ [QQ.exe]
+  UDP    0.0.0.0:61299          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:62332          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:62431          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:63943          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:63944          *:*                                    1324
+ [360rp.exe]
+  UDP    0.0.0.0:64804          *:*                                    1324
+ [360rp.exe]
+  UDP    127.0.0.1:9473         *:*                                    2672
+ [SystemWebServer.exe]
+  UDP    127.0.0.1:9474         *:*                                    4160
+ [ApplicationWebServer.exe]
+  UDP    127.0.0.1:53241        *:*                                    5528
+ [QQ.exe]
+  UDP    127.0.0.1:53499        *:*                                    3816
+ [360Tray.exe]
+  UDP    192.168.0.104:137      *:*                                    4
+ 无法获取所有权信息
+  UDP    192.168.0.104:138      *:*                                    4
+ 无法获取所有权信息
+  UDP    192.168.0.104:2177     *:*                                    5160
+  QWAVE
+ [svchost.exe]
+  UDP    [::]:500               *:*                                    524
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:4500              *:*                                    524
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:5355              *:*                                    1392
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:50382             *:*                                    6572
+ [UCBrowser.exe]
+  UDP    [::]:50384             *:*                                    6572
+ [UCBrowser.exe]
+  UDP    [fe80::a5e5:12d0:e3f0:71a1%11]:546  *:*
+    408
+  Dhcp
+ [svchost.exe]
+  UDP    [fe80::a5e5:12d0:e3f0:71a1%11]:2177  *:*
+     5160
+  QWAVE
+ [svchost.exe]
+
+C:\Users\Administrator>

@@ -1,0 +1,85 @@
+*********************精简版************************
+_0. git init
+_1. git add [file]
+
+2. git diff
+3. git commit [file] -m [message]
+ --- git push origin master
+
+4. git log [file]
+5. git show [hash] [file]
+6. git checkout [hash] [file]
+
+__6. git rm [file]
+__7. git rm -r -f [dir]/
+
+***************************************************
+
+///初始操作
+
+_0. 新建仓库：git init
+
+_1. 提交一个文件或文件夹到暂存：git add [file] / git add [dir] 
+	/ git add [file] [file] / git add .
+
+
+///日常操作
+
+*2. 查看XX文件修改了那些内容
+git diff [file]
+
+2.1. 查看文件修改内容历史
+	git blame [file]
+
+*3. 添加信息并提交修改到仓库：git commit -m [message] / 
+	/ git commit [file] -m [message]
+
+
+///维护操作
+
+*4 查看文件commit历史和对应哈希
+	git log [file]
+
+*4.1 查看哈希值对应修改内容
+	git show [commit-hash]
+
+*4.2 回滚到某个commit(不可逆)
+	git checkout [hash]
+
+
+*5. 显示commit历史，以及每次commit发生变更的文件
+git log --stat
+
+6. 显示当前分支最近的增删改查文件操作历史
+git status
+
+7. 更新代码
+git pull
+
+
+//远程仓库
+
+0. 克隆仓库
+  git clone <url>
+
+	cd <dir>
+
+1. 查看远程仓库信息
+  git remote -v
+  git remote show origin
+
+2. 查看全部分支
+  git branch
+
+3. 新建分支
+  git branch <branchname>
+
+4. 切换到分支
+  git checkout <branchname>
+
+5. 提交指定分支到远程库
+  git push origin <branchname>
+
+6. 删除分支
+  登陆github查看
+
