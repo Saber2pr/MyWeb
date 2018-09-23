@@ -4,7 +4,7 @@ _1. git add [file]
 
 2. git diff
 3. git commit [file] -m [message]
- --- git push origin master
+ --- git push
 
 4. git log [file]
 5. git show [hash] [file]
@@ -58,13 +58,14 @@ git pull
 
 
 //远程仓库
+__github申请仓库，复制url
 
-0. 克隆仓库
+_0. 克隆仓库
   git clone <url>
 
 	cd <dir>
 
-1. 查看远程仓库信息
+_1. 查看远程仓库信息
   git remote -v
   git remote show origin
 
@@ -83,3 +84,11 @@ git pull
 6. 删除分支
   登陆github查看
 
+7. 跟踪远程分支
+  git push --set-upstream origin testR
+
+//Notice:
+
+8. 追踪之后直接git push
+9. git push前要git commit
+9
