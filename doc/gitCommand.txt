@@ -85,7 +85,7 @@ _1. 查看远程仓库信息
   登陆github查看
 
 7. 跟踪远程分支
-  git push --set-upstream origin testR
+  git push --set-upstream origin <branchname>
 
 //Notice:
 
