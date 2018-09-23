@@ -91,4 +91,3 @@ _1. 查看远程仓库信息
 
 8. 追踪之后直接git push
 9. git push前要git commit
-9
