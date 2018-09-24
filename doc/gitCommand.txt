@@ -13,6 +13,7 @@ _1. git add [file]
 __6. git rm [file]
 __7. git rm -r -f [dir]/
 
+__**__ touch [file]
 ***************************************************
 
 ///初始操作
@@ -46,6 +47,8 @@ git diff [file]
 *4.2 回滚到某个commit(不可逆)
 	git checkout [hash]
 
+*4.3 清空仓库
+	git rm -r --cached .
 
 *5. 显示commit历史，以及每次commit发生变更的文件
 git log --stat
