@@ -1,0 +1,52 @@
+## 使用原则:
+——————————————————————————
+
+运行时需要用到的包使用–save，否则使用–save-dev
+
+依赖包用-save
+工具包用–save-dev
+
+
+——————————————————————————
+
+1. 安装到node_modules目录
+   不会修改package.json
+   之后运行npm install命令时，不会自动安装package
+
+*	npm install [package]
+
+
+
+2. 把X包安装到node_modules目录
+   会在package.json的dependencies属性下添加package
+   之后运行npm install命令时，会自动安装X到node_modules目录中
+   之后运行npm install -p 或者注明NODE_ENV变量值为production时，会自动安装      msbuild到node_modules目录中
+
+*	npm install --save [package]
+
+
+
+3. 会把X包安装到node_modules目录中
+   会在package.json的devDependencies属性下添加X
+   之后运行npm install命令时，会自动安装X到node_modules目录中
+   之后运行npm install -p 或者注明NODE_ENV变量值为production时，不会自动安装X到      node_modules目录中
+
+*	npm install --save-dev [package]
+
+
+
+4. 全局安装X
+
+*	npm install -g [package]
+
+
+
+(@ uninstall) 
+
+
+
+5. 查看全局模块
+
+*	npm list -g --depth 0
+
+
