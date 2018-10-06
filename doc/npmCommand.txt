@@ -3,8 +3,8 @@
 
 运行时需要用到的包使用-save，否则使用-save-dev
 
-依赖包用npm install --save  ||  npm install -s
-工具包用npm install --save-dev  ||  npm install -d
+依赖包用cnpm install --save || cnpm i -S
+工具包用cnpm install --save-dev || cnpm i -D
 
 
 ——————————————————————————
@@ -50,3 +50,12 @@
 *	npm list -g --depth 0
 
 
+6. 查看包远程库
+	npm config get registry
+
+7. 设置远程库
+	npm config set registry
+
+--++[npm](https://registry.npmjs.org/)
+--++[cnpm](https://registry.npm.taobao.org)
+	
