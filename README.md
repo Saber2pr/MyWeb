@@ -1,5 +1,6 @@
 > ## About the Author(AK-12):
 > * This website is for individuals (AK-12) and is based on bootstrap development.
+> * It's so large that can not be cloned.
 >	> AK-12 retain ownership.
 >	 `saber2pr@gmail.com`
 >	 `1029985799@qq.com`
