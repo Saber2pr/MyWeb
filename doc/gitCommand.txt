@@ -51,6 +51,14 @@ git diff [file]
 *4.3 清空仓库
 	git rm -r --cached .
 
+** 4.3.1查看仓库大小
+	git count-objects -v
+** 4.4 查找大文件哈希值
+  git verify-pack -v .git/objects/pack/pack-*.idx | sort -k 3 -g | tail -5
+
+ +对应路径
+  git rev-list --objects --all | grep [hash]
+
 *5. 显示commit历史，以及每次commit发生变更的文件
 git log --stat
 
@@ -86,6 +94,7 @@ _1. 查看远程仓库信息
   git push origin <branchname>
 
 6. 删除分支
+  git branch -d <branchName> 
   登陆github查看
 
 7. 跟踪远程分支
@@ -95,3 +104,6 @@ _1. 查看远程仓库信息
 
 8. 追踪之后直接git push
 9. git push前要git commit
+
+// 无法pull尝试
+git pull origin master --allow-unrelated-histories
