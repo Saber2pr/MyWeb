@@ -12,3 +12,7 @@
 
 5. 写入内容
 	echo "text" > <file>
+
+6. 取得文件夹所有权
+	sudo chmod -R 777 .
+
