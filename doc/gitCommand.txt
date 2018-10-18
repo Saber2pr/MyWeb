@@ -100,6 +100,11 @@ _1. 查看远程仓库信息
 7. 跟踪远程分支
   git push --set-upstream origin <branchname>
 
+7.1 添加上游主项目分支
+  git remote add upstream <url>
+7.2 拉取主项目更新
+  git fetch upstream
+
 //Notice:
 
 8. 追踪之后直接git push
