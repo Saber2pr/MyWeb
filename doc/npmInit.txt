@@ -1,4 +1,0 @@
-1. 新建一个目录，目录下执行npm init
-2. 初始化仓库，git init
-3. 安装依赖，npm install --save-dev <package>
-3. 配置package.json，添加script脚本
