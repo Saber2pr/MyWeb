@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>2048-AK-12</title>
-    <script>window.location.href = './play/'</script>
+    <script>
+        try{
+            if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            }else{
+                alert("为了有更好的游戏体验，请用移动端打开~\n_by_AK-12_")
+            }
+        }catch(e){
+            console.error(e)
+        }
+        window.location.href = './play/'
+    </script>
 </head>
 </html>
