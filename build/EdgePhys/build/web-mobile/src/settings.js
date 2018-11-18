@@ -1,1 +1,0 @@
-window._CCSettings={platform:"web-mobile",groupList:["default"],collisionMatrix:[[true]],rawAssets:{assets:{}},assetTypes:[],launchScene:"db://assets/main.fire",scenes:[{url:"db://assets/main.fire",uuid:0}],packedAssets:{"04aa01c7f":["9baIISIqBFA6l19+mosg1D","a2MjXRFdtLlYQ5ouAFv/+R",0]},md5AssetsMap:{},orientation:"landscape",subpackages:{},uuids:["datV124yhMXKEODkt0ZChU"]};
