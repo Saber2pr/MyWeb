@@ -44,6 +44,8 @@ npm 删除模块
 【npm uninstall xxx】删除xxx模块；
 【npm uninstall -g xxx】删除全局模块xxx；
 
+删除已发布npm包
+  npx force-unpublish <packageName> 'message'
 
 
 (@ uninstall) 

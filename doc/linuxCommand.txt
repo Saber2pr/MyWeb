@@ -65,6 +65,17 @@ sudo update-alternatives --config default.plymouth
 
 sudo update-initramfs -u
 
+uname -r命令查看当前使用的linux版本
 
+查看已安装内核
+dpkg --get-selections |grep linux-image
+
+使用sudo apt-get purge sudo apt-get purge linux-image-4.15.0-29-generic命令删除指定的image版本	
+使用df -h /boot查看boot分区的剩余空间： 
+
+查询端口：
+lsof -i:3000
+
+sudo kill pid
 
 
