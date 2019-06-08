@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 1.5rem;
+}
+
+table input {
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.toolBar>.add {
+  width: 50%;
+}
