@@ -1156,7 +1156,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\"));\nvar app_1 = __webpack_require__(/*! ./app */ \"./src/app.tsx\");\nvar container = document.createElement('div');\ndocument.body.append(container);\nreact_dom_1.default.render(react_1.default.createElement(app_1.App, null), container);\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\"));\nvar app_1 = __webpack_require__(/*! ./app */ \"./src/app.tsx\");\nreact_dom_1.default.render(react_1.default.createElement(app_1.App, null), document.getElementById('root'));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
 
 /***/ }),
 
