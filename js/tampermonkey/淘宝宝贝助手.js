@@ -35,7 +35,6 @@
         const handle = setInterval(() => {
             if(isPending){
                 const currentPageIndex = getPageIndex()
-                console.log('currentPageIndex',currentPageIndex, 'to',pageIndex)
                 if(currentPageIndex === pageIndex) {
                     isPending = false
                     callback(pageIndex)
