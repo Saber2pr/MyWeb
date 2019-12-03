@@ -9,7 +9,7 @@
         p.after("XXX")
     })
 
-    document.addEventListener('keydown', e => {
+    document.addEventListener('keydown', e => debounce(() => {
         switch(e.key){
             case 'f':{
                 const currentPageIndex = getPageIndex()
@@ -24,7 +24,7 @@
             }
             break;
         }
-    })
+    }))
 
     // css选择器
     const selectors = {
@@ -65,5 +65,9 @@
             clearInterval(handle)
             alert('请求超时')
         }, timeout)
+    }
+    const debounce = (callback, delta = 300) => {
+        clearTimeout(debounce["throttle"])
+        debounce["throttle"] = setTimeout(callback, delta)
     }
 })();
