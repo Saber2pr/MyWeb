@@ -1,13 +1,11 @@
 // 复制以下代码
 
-
 (function() {
     'use strict';
-    // 就按自己需要改下面就好了
-    const onPageChange = index => transform(p => {
-        // 操作商品简介元素
-        p.after("XXX")
-    })
+    const onPageChange = index => {
+        // 就按自己需要改下面就好了
+        console.log(`第${index}页`)
+    }
 
     document.addEventListener('keydown', e => debounce(() => {
         switch(e.key){
@@ -42,8 +40,6 @@
     // pageList
     const pageList = $(selectors.pageList)
     const getPageIndex = () => Number(pageList.getElementsByClassName(selectors.pageIndexActive)[0].textContent)
-    // transformer
-    const transform = op => Array.from(document.getElementsByClassName(selectors.shopInfo)).forEach(ch => op(ch.querySelector('p')))
 
     // addPageLoadedListenerOnce
     const addPageLoadedListenerOnce = (pageIndex, callback, timeout = 10000) => {
@@ -66,8 +62,8 @@
             alert('请求超时')
         }, timeout)
     }
-    const debounce = (callback, delta = 300) => {
-        clearTimeout(debounce["throttle"])
-        debounce["throttle"] = setTimeout(callback, delta)
+    const debounce = (callback, delta = 300, id="default") => {
+        clearTimeout(debounce[id])
+        debounce[id] = setTimeout(callback, delta)
     }
 })();
