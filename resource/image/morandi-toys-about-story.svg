@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F4F1"/>
+      <stop offset="100%" stop-color="#F1EEE9"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#C9C3BC" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="512" height="512" fill="url(#bgGrad)"/>
+
+  <!-- plush toy -->
+  <g transform="translate(76,56)" filter="url(#softShadow)">
+    <!-- head -->
+    <circle cx="180" cy="160" r="120" fill="#B6B0A8"/>
+    <!-- ears -->
+    <ellipse cx="120" cy="64" rx="34" ry="56" transform="rotate(-18 120 64)" fill="#B6B0A8"/>
+    <ellipse cx="240" cy="64" rx="34" ry="56" transform="rotate(18 240 64)" fill="#B6B0A8"/>
+    <!-- inner ears -->
+    <ellipse cx="122" cy="66" rx="16" ry="30" transform="rotate(-18 122 66)" fill="#D8CFC4"/>
+    <ellipse cx="238" cy="66" rx="16" ry="30" transform="rotate(18 238 66)" fill="#D8CFC4"/>
+    <!-- eyes -->
+    <circle cx="150" cy="165" r="8" fill="#3A3A3A"/>
+    <circle cx="210" cy="165" r="8" fill="#3A3A3A"/>
+    <!-- nose -->
+    <ellipse cx="180" cy="196" rx="7" ry="5" fill="#3A3A3A"/>
+    <!-- mouth -->
+    <path d="M168 206 Q180 216 192 206" stroke="#3A3A3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- blush -->
+    <ellipse cx="140" cy="188" rx="14" ry="8" fill="#E9DCD3" opacity="0.8"/>
+    <ellipse cx="220" cy="188" rx="14" ry="8" fill="#E9DCD3" opacity="0.8"/>
+    <!-- body -->
+    <ellipse cx="180" cy="320" rx="110" ry="90" fill="#B6B0A8"/>
+    <!-- arms -->
+    <ellipse cx="80" cy="280" rx="38" ry="64" transform="rotate(-20 80 280)" fill="#B6B0A8"/>
+    <ellipse cx="280" cy="280" rx="38" ry="64" transform="rotate(20 280 280)" fill="#B6B0A8"/>
+    <!-- texture -->
+    <g opacity="0.05" fill="#fff">
+      <ellipse cx="168" cy="120" rx="36" ry="20"/>
+      <ellipse cx="208" cy="160" rx="28" ry="12"/>
+    </g>
+  </g>
+</svg>

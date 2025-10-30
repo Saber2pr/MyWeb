@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradDogRoundEars" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5F2"/>
+      <stop offset="100%" stop-color="#EFE9E3"/>
+    </linearGradient>
+    <filter id="softShadowDogRoundEars" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#C9C3BC" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="512" height="512" fill="url(#bgGradDogRoundEars)"/>
+
+  <!-- dog plush toy -->
+  <g transform="translate(80,60)" filter="url(#softShadowDogRoundEars)">
+    <!-- head -->
+    <circle cx="180" cy="160" r="120" fill="#C9B69A"/>
+    
+    <!-- ears (round, cute) -->
+    <circle cx="100" cy="120" r="40" fill="#C9B69A"/>
+    <circle cx="260" cy="120" r="40" fill="#C9B69A"/>
+    
+    <!-- inner ears -->
+    <circle cx="100" cy="120" r="20" fill="#E1D8CC"/>
+    <circle cx="260" cy="120" r="20" fill="#E1D8CC"/>
+    
+    <!-- eyes -->
+    <circle cx="150" cy="165" r="10" fill="#3A3A3A"/>
+    <circle cx="210" cy="165" r="10" fill="#3A3A3A"/>
+    
+    <!-- nose -->
+    <ellipse cx="180" cy="196" rx="7" ry="5" fill="#3A3A3A"/>
+    
+    <!-- mouth -->
+    <path d="M170 206 Q180 218 190 206" stroke="#3A3A3A" stroke-width="2" fill="none" stroke-linecap="round"/>
+    
+    <!-- blush -->
+    <ellipse cx="140" cy="188" rx="14" ry="7" fill="#EAD9CE" opacity="0.7"/>
+    <ellipse cx="220" cy="188" rx="14" ry="7" fill="#EAD9CE" opacity="0.7"/>
+    
+    <!-- body -->
+    <ellipse cx="180" cy="320" rx="100" ry="90" fill="#C9B69A"/>
+    
+    <!-- arms/paws -->
+    <ellipse cx="80" cy="280" rx="36" ry="60" transform="rotate(-20 80 280)" fill="#C9B69A"/>
+    <ellipse cx="280" cy="280" rx="36" ry="60" transform="rotate(20 280 280)" fill="#C9B69A"/>
+    
+    <!-- light texture for fabric -->
+    <g opacity="0.05" fill="#fff">
+      <ellipse cx="170" cy="120" rx="36" ry="18"/>
+      <ellipse cx="200" cy="160" rx="28" ry="12"/>
+    </g>
+  </g>
+</svg>
